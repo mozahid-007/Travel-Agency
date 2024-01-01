@@ -1,0 +1,942 @@
+/*==========Common CSS============*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,600&display=swap');
+
+
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 7rem 7%;
+}
+
+.btn{
+    
+    display: inline-block;
+    background: #222;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+   animation: fadeIn .3s linear backwards .6s;
+    
+}
+.btn:hover{
+    background-color: #8e44ad;  
+}
+
+
+
+    
+
+/*===========Start Header Part=========*/
+.header{
+    background-color: #fff;
+    
+    box-shadow: .5rem .3rem rgba(0, 0, 0, 0.359);
+    position: sticky;
+    top: 0;left: 0;right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 10000;
+}
+.logo a{
+    font-size: 30px;
+    color: black;
+}
+.sideNav a{
+
+    font-size: 25px;
+    margin-left: 18px;
+    color: black;
+}
+.sideNav a:hover{
+    color: purple;
+}
+
+#menuBtn{
+    font-size:25px;
+    display: none;
+    color: black;
+}
+
+/*===========End Header Part=========*/
+
+
+/*===========slider=========*/
+.slider{
+    padding: .1rem 1rem;
+}
+.slider img{
+height: 80vh;
+}
+
+.slider-text{
+    margin-bottom: 7%;
+   
+}
+.slider-text h3{
+
+    color: #fff9;
+    font-size: 2.5rem;
+    padding-bottom:1rem ;
+    animation: fadeIn .3s linear backwards .2s;   
+}
+.slider-text h5{
+
+    color: #fff;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-shadow:0 1.5rem 3rem rgba(0,0,0,.3);
+    line-height: 1;
+    padding: 1rem 0rem;
+    animation: fadeIn .3s linear backwards .4s;
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+
+}
+/*=====Start Services Part=====*/
+
+.services{
+    background-color: #fff;
+
+}
+.services .services-heading{
+
+    color: #000;
+    text-align: center;
+    text-transform: uppercase; 
+   
+}
+.services .services-heading h1{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;       
+}
+.services .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+   
+}
+.services .box{
+    background-color: blueviolet;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    margin:1.5rem;
+    border-radius: 1rem;
+
+}
+.services .box h1{
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    
+}
+
+.services .active{
+    background-color: #000;
+}
+.services .box:hover{
+    background-color: #000;
+
+}
+
+/*=====End Services Part=====*/
+
+
+/*=====Start About Part=====*/
+
+
+.about{
+    padding:0 7%;
+}
+
+
+.about-heading{
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-heading h1{
+    font-size: 4rem;
+    font-weight: bold;
+
+
+}
+.about-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+.about-item-img{
+
+    flex-grow: 1;
+    flex-basis: 30rem;
+    padding: 1.8rem;
+   
+
+
+}
+.about-item-img img{
+    width: 100%;
+}
+
+.about-item-text{
+
+
+    background-color: #eee;
+    flex-grow: 1;
+    flex-basis: 25rem;
+    padding: 2.5rem;
+    
+}
+.about-item-text h3{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    padding:1rem 0 ;
+    color: #222;
+
+}
+.about-item-text p{
+    font-size: 1.5rem;
+    color:#222 ;
+    text-align: justify;
+    
+}
+/*=======End About part=======*/
+
+/*=======start packages part======*/
+
+
+.package{
+    background-color: #eee;
+    
+}
+
+.package-heading{
+    color: #000;
+    padding-top:1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.package-heading h1{
+
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom:1rem;
+   
+}
+.package-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.package-box{
+
+    border: 1.7px solid #000;
+    background-color: #fff;
+    flex-basis: 40rem;
+    margin:1rem;
+    overflow: hidden;
+    transition: .3s linear;
+    
+    
+}
+.package-box:hover img{
+
+    transform: scale(1.08);
+
+    
+    
+}
+.package-box img{
+    width: 100%;
+    
+}
+.package-text{
+    
+    text-align: center;
+    padding: 2rem;
+    
+}
+.package-text h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.package-text p{
+    font-size: 1.7rem;
+
+}
+.p-btn{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*=======End packages part======*/
+/*=======Start Discount part======*/
+.discount-heading{
+    text-align: center;
+}
+.discount-heading h1{
+
+    font-size: 4rem;
+    text-transform: capitalize;
+    padding: 2rem;
+
+}
+.discount-text{
+    text-align: center;
+}
+.discount-text p{
+    font-size: 2rem;
+    color: #000;
+    padding-bottom: 2rem;
+}
+/*=======End Discount part======*/
+
+
+/*=========================================
+                About page
+==========================================*/
+
+.aboutpage{
+    background: url(../img/header-bg-1.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 7%;
+
+}
+
+.aboutpage h1{
+    color: #fff;
+}
+
+
+.aboutpage-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1rem;
+
+}
+.aboutpage-img{
+    flex-basis: 50%;
+
+}
+.aboutpage-img img{
+    width: 100%;
+}
+
+
+.aboutpage-content{
+    flex-basis: 48%;  
+    background-color: rgba(238, 238, 238, 0.402);    
+    padding:2rem;
+    text-align: center;
+}
+.aboutpage-content h1{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    color: #222;
+}
+.aboutpage-content p{
+    color: #000;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding-bottom: 2rem;
+    padding: 3rem;
+
+}
+
+.aboutpage-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.incon-item{
+    background-color: #eee;
+    border-radius: .51rem;
+    border: 1px solid black;
+    flex-grow: 1;
+    margin: 1rem 1.5rem;
+    text-transform: capitalize;
+    transition: .3s linear;
+    padding: 2rem;
+}
+
+.incon-item:hover{
+   
+    background-color: #222;
+}
+
+
+.incon-item i{
+    font-size: 2.5rem;
+    
+    color: #8e44ad;
+    
+   
+}
+.incon-item h3{
+    color: #222;
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+    transition: .3s linear;
+}
+.incon-item:hover h3{
+
+    color: #eee;
+}
+/*---------Review-----------------------*/
+.review-container{
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2rem;
+    text-transform: capitalize;
+   
+  
+}
+.review-card{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    flex-basis: 31%;
+    margin:1rem;
+    padding: 2rem .4rem;
+   
+}
+.review-content p{
+    font-size: 1.32rem;
+    padding: .45rem 1.5rem;
+    text-align: justify;
+}
+.review-container h2{font-size: 1.5rem;margin:.41rem 0;}
+.review-container h4{font-size: 1.25rem;margin-bottom: .76rem;color: rgba(224, 36, 36, 0.653);}
+.review-container img{
+    height: 80px;width: 80px;border-radius: 50%;
+}
+/*=======================================
+            End About page
+==========================================*/
+
+
+
+/*=======================================
+            Start  Packages page
+==========================================*/
+
+
+
+.packages-page{
+    background-image: url(../img/header-bg-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem 7%;
+    
+ 
+    
+    
+}
+
+
+.packages-heading{
+
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 2.4rem;
+
+}
+.pack-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 3rem;
+}
+
+.pack-container-box{
+    flex-basis: 33rem;
+    border: 1.5px solid black;
+    margin: 1.5rem;
+    overflow: hidden;
+    transition: .3s linear;
+
+}
+.pack-container-box:hover img{
+    transform: scale(1.2);
+    
+
+}
+.pack-container-box img{
+    width: 100%;
+}
+.pack-text{
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+.pack-text h3{
+    font-size: 2rem;
+    color: #222;
+
+
+}
+.pack-text p{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+/*=======================================
+            End packages page
+==========================================*/
+/*=======================================
+            start Booking packages page
+==========================================*/
+.book-heading{
+    text-align: center;
+    padding-top: 7rem 7%;
+
+}
+.book-heading h1{
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+.form-container{
+    background-color: #eee;
+    padding: 2rem 3.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    text-transform: capitalize;
+    margin: auto;
+}
+
+.form-container label{
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #222; 
+}
+.form-container input{
+   
+    width: 100%;
+    padding: 1rem .5rem;
+    margin: .25rem 0rem;
+    border: 1px solid rgba(34, 34, 34, 0.324);
+    border-radius: .41rem;
+    font-size: 1.5rem;
+    background-color: rgba(81, 176, 193, 0.078);
+       
+}
+.form-container input:focus{
+    background-color: #000;
+    color: #fff;
+}
+.form-container .btn{
+    margin-top: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======================================
+            End Booking packages page
+==========================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========Start Footer===========*/
+
+.footer{
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:7rem;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #8d44ad0a;
+
+   
+}
+.box-container .box{
+
+    margin: 2rem;
+
+}
+
+.box .footer-heading h1{
+    color: #fff;
+    font-size: 2.5rem;
+    padding:3.2rem;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: column;  
+}
+
+.box .footer-text a{
+    display: block;
+    padding-bottom: 1.6rem;
+    font-size: 2rem;
+    color: lightcyan;
+    transition: all .2s linear;
+}
+.box .footer-text a i{
+    color: rgb(141, 58, 218);
+    padding-right: .7rem;
+}
+.box .footer-text a:hover i{
+    padding-right: 2rem;  
+}
+
+/*=======Credit Part=======*/
+.credit{
+    color: #fff;
+    text-align: center;
+    border-top: .6px solid bisque;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+/*========End Footer part===========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=======Media Quiry========*/
+
+@media (max-width:768px) {
+
+
+    
+/*===========Common Part=========*/
+
+    html{
+        font-size: 55.5%;
+    }
+    section{
+        padding: 10rem 5%;
+    }
+
+    /*===========Start Header Part=========*/
+
+    #menuBtn{
+        display: inline-block;
+        cursor: pointer;
+        transition: .2s linear;
+    }
+
+    #menuBtn.fa-times{
+        transform: rotate(180deg);
+    }    
+    .sideNav{
+
+        position: absolute;
+        top:99%;left: 0;right: 0;
+        text-align: center;
+        padding: 2rem;
+        margin-top: -550px;
+        transition: .3s linear;
+        background-color: #fff;
+        box-shadow: .3rem .3rem .2rem rgba(0, 0, 0, 0.177),-.3rem -.3rem .5rem rgba(0, 0, 0, 0.159);
+    }
+    .header .sideNav.active{
+        margin-top: 0px;
+    }
+    .sideNav a{
+        display:block;
+        margin: 2rem;
+    }
+
+
+    /*===========End Header Part=========*/
+
+
+    /*===========start slider Part=========*/
+
+    .slider-text{
+        margin-bottom: 18%;
+       
+    }
+
+
+    .slider-text h3{
+
+        font-size: 1.5rem;
+        padding-bottom:.5rem ;
+        
+       
+    }
+    .slider-text h5{
+    
+        font-size: 4vw;
+        padding: .3rem 0rem;
+        
+       
+    }
+
+    .btn{
+    
+
+        margin-top: .3rem;
+        font-size: 1rem;
+        padding: .5rem 2rem;
+       
+
+    }  
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*===========End slider Part=========*/
+
+
+
+    .about-item-img img{
+        width: 100%;
+    }
+
+/*===========Start aboutpages Part=========*/
+
+.aboutpage-img{
+    flex-basis: 100%;
+
+}
+
+
+
+.aboutpage-content{
+    flex-basis: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===========Start Footer Part=========*/
+
+    .footer{
+
+        background-position: right;
+        padding:2rem 5rem;
+    }
+    
+
+
+
+
+
+    .box-container{
+        display: flex;
+        flex-direction: column;      
+    }
+
+
+    .box .footer-heading{
+
+        padding: 3rem 0;
+     
+
+    }
+    .box .footer-heading h1{
+
+        font-size: 2.5rem;
+
+    }
+
+
+  
+    
+    .box .footer-text a{
+
+        font-size: 1.8rem;
+        padding-bottom: 4rem;
+        
+
+    }
+
+    .box .footer-text a i{
+        padding-right: 1.9rem;
+    }
+
+    .box .footer-text a:hover i{
+        padding-right: 3rem;  
+    }
+
+
+/*===========End Footer Part=========*/
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
